@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brian's Portfolio</title>
     <link rel="stylesheet" href="CSS/styles.css">           <!-- Linking external CSS file -->
+    <!-- Add the jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
 </head>
     <body>
 <!-- Start of Header Section -->
@@ -101,4 +105,20 @@
     <p>bdelavega12@gmail.com</p>
 </footer>
 
-<script src="js/index.js"></script>
+
+
+<!-- Start of your jQuery script -->
+<script>
+    $(document).ready(function() {
+
+        
+        // When a skill title is clicked
+        $('.skill h3').click(function() {
+            // Toggle the visibility of the paragraph below the clicked title
+            $(this).next('p').slideToggle('slow');
+        });
+    });
+    </script>
+
+</body>
+</html>
